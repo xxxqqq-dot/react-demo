@@ -1,0 +1,53 @@
+.taskContainer {
+  width: 150px;
+  text-align: center;
+
+  .context {
+    padding-top: 10px;
+    min-height: 200px;
+    margin-top: 10px;
+  }
+}
+
+.taskContainer {
+
+  .taskTitle,
+  .taskContext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: #f5e0e1;
+
+  }
+
+
+  
+
+
+  .item {
+    position: relative;
+    button {
+      position: absolute;
+      right: -7px;
+      top: -7px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 0;
+      text-align: center;
+      line-height: 18px;
+      display: none;
+      background-color: red;
+    }
+    border: 1px solid #000;
+    padding: 3px 10px;
+    margin: 3px 0;
+    &:hover button{
+      display: block;
+    }
+  }
+}
+
+.activeClass {
+  background-color: #eee!important;
+}
